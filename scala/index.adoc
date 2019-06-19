@@ -14,3 +14,32 @@ https://github.com/sonota88/scala-cli-template
 
 sbt "run arg1 arg2" で実行
 ---------------------
+
+== クラス
+
+[source,scala]
+---------------------
+class Foo {
+  // ...
+}
+---------------------
+
+=== シングルトン
+
+[source,scala]
+---------------------
+object Foo {
+  // ...
+}
+---------------------
+
+
+== メソッド・関数
+
+[source,scala]
+---------------------
+// 可変長引数
+def foo(args:String*) = {
+  // args は Seq 型
+}
+---------------------
