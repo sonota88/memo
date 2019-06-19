@@ -1,0 +1,16 @@
+= Scala
+
+== sbt
+
+[source]
+---------------------
+sbt をダウンロードして展開
+sbt のあるディレクトリにパスを通す
+ソースは src/main/scala/ の下に置く
+
+build.sbt 書く。内容は↓を参照。
+sonota88/scala-cli-template
+https://github.com/sonota88/scala-cli-template
+
+sbt "run arg1 arg2" で実行
+---------------------
