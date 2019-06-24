@@ -43,3 +43,22 @@ def foo(args:String*) = {
   // args は Seq 型
 }
 ---------------------
+
+
+== 制御構造
+
+=== if
+
+[source,scala]
+---------------------
+if ( ... ) {
+  // ...
+} else if ( ... ) {
+  // ...
+} else {
+  // ...
+}
+
+// 三項演算子の代わり
+val s:String = if (isFoo) "true" else "false"
+---------------------
