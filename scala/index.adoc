@@ -1,5 +1,7 @@
 = Scala
 
+:toc: right
+
 == sbt
 
 [source]
