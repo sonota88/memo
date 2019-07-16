@@ -67,3 +67,9 @@ if ( ... ) {
 // 三項演算子の代わり
 val s:String = if (isFoo) "true" else "false"
 ---------------------
+
+== 文字列
+
+=== 比較
+
+`==` : Java の equals に相当する。
