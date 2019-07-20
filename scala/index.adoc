@@ -90,3 +90,18 @@ xs.foreach {x =>
 === 比較
 
 `==` : Java の equals に相当する。
+
+
+
+
+== パターンマッチ
+
+[source,scala]
+---------------------
+val n =
+  optStr match {
+    case Some(str: String) => Integer.valueOf(str)
+    case None => 1
+    case _ => 2
+  }
+---------------------
