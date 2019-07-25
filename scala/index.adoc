@@ -102,6 +102,18 @@ stringList.mkString(", ")
 
 
 
+
+== マップ
+
+[source, scala]
+---------------------
+// mutable map を immutable map に変換 (>=2.8)
+mutMap.toMap
+---------------------
+
+
+
+
 == パターンマッチ
 
 [source,scala]
