@@ -25,8 +25,9 @@ case $x in
 esac
 ---------------------
 
+== スニペット
 
-== while + read
+=== while + read
 
 [source,bash]
 ---------------------
@@ -37,3 +38,16 @@ done
 
 プログラマーの君！ 騙されるな！ シェルスクリプトはそう書いちゃ駄目だ！！ という話 - Qiita +
 https://qiita.com/piroor/items/77233173707a0baa6360
+
+=== スクリプトの置かれているパス（ディレクトリ）を取得
+
+[source,bash]
+--------------------------------
+_get_project_dir() {
+  local real_path="$(readlink --canonicalize "$0")"
+  (
+    cd "$(dirname "$real_path")"
+    pwd
+  )
+}
+--------------------------------
