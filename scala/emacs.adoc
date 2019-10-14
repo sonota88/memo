@@ -1,0 +1,17 @@
+= Scala＞Emacs
+:toc:
+
+[source, elisp]
+--------------------------------
+(add-to-list 'load-path (expand-file-name "/path/to/emacs-scala-mode"))
+;; (load "scala-mode.el")
+(autoload 'scala-mode "scala-mode")
+(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))
+(add-to-list 'auto-mode-alist '("\\.sbt\\'" . scala-mode))
+
+(add-hook 'scala-mode-hook
+          (lambda ()
+            (font-lock-add-keywords
+             nil
+             '(("(\\|)\\|\\[\\|\\]\\|{\\|}" . 'my-paren-face)))))
+--------------------------------
