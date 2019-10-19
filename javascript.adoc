@@ -1,0 +1,31 @@
+= JavaScript
+:toc:
+
+== URL, URLSearchParams
+
+URL - Web API | MDN +
+https://developer.mozilla.org/ja/docs/Web/API/URL
+
+URLSearchParams - Web API | MDN +
+https://developer.mozilla.org/ja/docs/Web/API/URLSearchParams
+
+=== パラメータの抽出
+
+[source, javascript]
+---------------------
+const url = new URL("http://example.com/?foo=" + encodeURIComponent("bar&あ"));
+const sp = url.searchParams;
+sp.has("foo"); //=> true
+sp.get("foo"); //=> "bar&あ"
+---------------------
+
+=== パラメータからクエリ文字列を生成
+
+[source, javascript]
+---------------------
+// const sp = new URLSearchParams("foo=1");
+const sp = new URLSearchParams();
+sp.set("bar", "BAR");
+sp.set("baz", "BAZ");
+sp.toString(); //=> "bar=BAR&baz=BAZ"
+---------------------
