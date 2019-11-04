@@ -11,6 +11,15 @@
 ---------------------
 
 
+== date
+
+[source,bash]
+---------------------
+date "+%Y-%m-%d %H:%M:%S"
+date "+%s" #=> unix timestamp
+---------------------
+
+
 == case
 
 [source,bash]
