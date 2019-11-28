@@ -49,6 +49,18 @@ def foo(args:String*) = {
 ---------------------
 
 
+''''
+
+
+Scala スケーラブルプログラミング 第3版 p100
+
+> 一般に推奨される慣習では、メソッドが副作用を持つ場合には
+> `println()` のように括弧を付けるが、副作用を持たない場合には
+> `String` の `toLowerCase` のように省略することになっている。
+
+
+
+
 == 条件分岐
 
 === if
@@ -125,3 +137,13 @@ val n =
     case _ => 2
   }
 ---------------------
+
+
+
+
+== JSON
+
+=== json4s
+
+jackson +
+https://github.com/sonota88/scalatra-template
