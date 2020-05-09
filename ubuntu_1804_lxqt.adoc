@@ -1,4 +1,10 @@
 ```
+sudo apt install
+lxqt
+openbox
+obconf
+
+--------------------------------
 ■ LXQt の quick launch
 
 ~/.config/lxqt/panel.conf
@@ -30,3 +36,27 @@
 設定＞LXQt settings＞LXQt外観の設定
 アイコンテーマ
 ```
+
+= 日本語入力
+
+^^^
+--------------------------------
+■ Fcitx に変更
+
+Ubuntu Unity 18.04 その13 - Fcitx + Mozcをインストールするには・日本語入力環境の変更 - kledgeb
+https://kledgeb.blogspot.com/2018/04/ubuntu-unity-1804-13-fcitx-mozc.html
+
+/usr/bin/python3 /usr/bin/gnome-language-selector
+
+第520回　Ubuntu 18.04 LTSの日本語入力：Ubuntu Weekly Recipe｜gihyo.jp … 技術評論社
+https://gihyo.jp/admin/serial/01/ubuntu-recipe/0520?page=2
+im-config
+fcitx-auto-start
+
+--------------------------------
+■ Mozc
+
+/usr/lib/mozc/mozc_tool --mode=config_dialog
+
+一般＞スペースの入力
+^^^
