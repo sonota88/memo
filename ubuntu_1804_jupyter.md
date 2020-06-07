@@ -1,14 +1,15 @@
-# Ubuntu 18.04にJupyter NotebookとIRubyをインストール
+# Ubuntu 18.04にJupyter NotebookとIRubyをインストール（pyenv, rbenv を使用）
 
 ```
 Ubuntu 18.04
 anyenv
 pyenv
   Python 3.7.7
-  jupyter 1.0.0
 rbenv
   Ruby 2.7.1
-  iruby 0.4.0
+
+jupyter 1.0.0
+iruby 0.4.0
 ```
 
 Docker を使っていますが、まっさらな状態に戻してやり直したりしたいためです。
@@ -95,9 +96,7 @@ rbenv install 2.7.1
 ```
 
 <!--
-real    2m48.010s
-user    6m24.533s
-sys     0m43.502s
+3分くらい
 -->
 
 Docker のポートマッピングの確認。
@@ -118,7 +117,6 @@ RBENV_VERSION=2.7.1 ruby -run -e httpd -- --port=8888 --bind-address=0.0.0.0 .
 # Python 3.7.7 のインストール
 
 ```sh
-# あとで必要になるので
 sudo apt install -y libffi-dev libsqlite3-dev
 
 env PYTHON_CONFIGURE_OPTS='--enable-shared' pyenv install 3.7.7
@@ -135,7 +133,6 @@ https://github.com/mrkn/pycall.rb#note-for-pyenv-users
 # Jupyter Notebook のインストール
 
 ```sh
-# ModuleNotFoundError: No module named '_ctypes'
 # ディレクトリと rbenv, pyenv の用意
 
 mkdir jupyter
@@ -185,8 +182,8 @@ jupyter notebook --no-browser --ip=0.0.0.0
 # IRuby のインストール
 
 ```sh
-# https://github.com/SciRuby/iruby
-# のインストールの記述に従ってライブラリをインストール
+## https://github.com/SciRuby/iruby
+## のインストールの記述に従ってライブラリをインストール
 
 sudo apt install -y libtool libffi-dev ruby ruby-dev make
 sudo apt install -y libzmq3-dev libczmq-dev
@@ -221,8 +218,8 @@ cat ~/.local/share/jupyter/kernels/ruby/kernel.json
 jupyter notebook --no-browser --ip=0.0.0.0
 ## → Ruby 2.7.1 のノートブックが新規作成できるようになる
 
-## なるが、次のようなエラーが jupyter を起動したターミナルに出る
-## うまく動いていないっぽい
+## しかし、次のようなエラーが jupyter を起動したターミナルに出て
+## うまく動かない
 
 [I 07:06:44.327 NotebookApp] KernelRestarter: restarting kernel (3/5), new random ports
 Traceback (most recent call last):
@@ -231,10 +228,10 @@ Traceback (most recent call last):
 /home/user/.anyenv/envs/rbenv/versions/2.7.1/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': can't find gem iruby (>= 0.a) with executable iruby (Gem::GemNotFoundException)
 ```
 
-これはおそらく rbenv + bundler のせいなので、
+これはおそらく rbenv + bundler 環境で実行していないせいなので、
 iruby コマンドのラッパー `iruby.sh` を用意して対処してみる。
 
-他に良い方法があるかもしればいが、ここではひとまずこれで動きました。
+他に良い方法があるかもしれませんが、とりあえずこれで動きました。
 
 ```sh
 cat <<'EOB' > iruby.sh
@@ -279,6 +276,39 @@ nano ~/.local/share/jupyter/kernels/ruby/kernel.json
 
 ## もう一度 jupyter を起動
 jupyter notebook --no-browser --ip=0.0.0.0
-
-## ruby カーネルに接続できて動くようになった
 ```
+
+これで ruby カーネルに接続できて動くようになった。
+
+
+
+
+
+# ライブラリの追加
+
+## Python のライブラリを追加したい場合
+
+```sh
+pip install foo_lib
+```
+
+カーネルを再起動（ノートブックのページのメニューの Kernal → Restart）
+すると import できるようになる。
+
+<!--
+sudo apt install libsasl2-dev
+pip install 'pyhive[hive]'
+-->
+
+## Ruby のライブラリを追加したい場合
+
+```sh
+echo 'gem "lib_foo"' >> Gemfile
+bundle install
+```
+
+<!--
+echo 'gem "mrtable"' >> Gemfile
+-->
+
+カーネルを再起動すると require できるようになる。
