@@ -13,7 +13,11 @@ rbenv
 
 Docker を使っていますが、まっさらな状態に戻してやり直したりしたいためです。
 
----
+
+
+
+
+# Docker の用意
 
 Dockerfile
 
@@ -22,9 +26,6 @@ FROM ubuntu:18.04
 
 RUN apt-get update \
   && apt-get install -y sudo git wget build-essential nano
-
-# Dockerコンテナ内にsudoユーザを追加する - Qiita
-# https://qiita.com/iganari/items/1d590e358a029a1776d6
 
 RUN useradd --create-home --gid sudo --shell /bin/bash user1 \
   && echo 'user1:pass' | chpasswd \
@@ -37,6 +38,8 @@ WORKDIR /home/user1
 
 CMD ["/bin/bash"]
 ```
+
+参考: [Dockerコンテナ内にsudoユーザを追加する - Qiita](https://qiita.com/iganari/items/1d590e358a029a1776d6)
 
 イメージをビルドしてコンテナを起動。
 
@@ -56,14 +59,18 @@ echo "export PS1='----------------'\"\n\${PS1}\"" >> ~/.bashrc
 exec bash -l
 ```
 
-anyenv, rbenv, pyenv のインストール
+
+
+
+
+# anyenv, rbenv, pyenv のインストール
 
 ```sh
 git clone https://github.com/anyenv/anyenv ~/.anyenv
 
 export PATH="$HOME/.anyenv/bin:$PATH"
 echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(anyenv init -)"' >> ~/.bashrc
+echo 'eval "$(anyenv init -)"'               >> ~/.bashrc
 
 exec bash -l
 
@@ -75,20 +82,23 @@ anyenv install pyenv
 exec bash -l
 ```
 
-----
-Ruby 2.7.1 のインストール
+
+
+
+
+
+# Ruby 2.7.1 のインストール
 
 ```sh
 sudo apt install -y libssl-dev zlib1g-dev
-
 rbenv install 2.7.1
+```
 
+<!--
 real    2m48.010s
 user    6m24.533s
 sys     0m43.502s
-```
-
-
+-->
 
 Docker のポートマッピングの確認。
 先に疎通確認しておきます。
@@ -101,9 +111,11 @@ RBENV_VERSION=2.7.1 ruby -run -e httpd -- --port=8888 --bind-address=0.0.0.0 .
 ```
 
 
-----
 
-Python 3.7.7 のインストール
+
+
+
+# Python 3.7.7 のインストール
 
 ```sh
 # あとで必要になるので
@@ -117,8 +129,10 @@ https://github.com/mrkn/pycall.rb#note-for-pyenv-users
 
 
 
-----
-Jupyter Notebook のインストール
+
+
+
+# Jupyter Notebook のインストール
 
 ```sh
 # ModuleNotFoundError: No module named '_ctypes'
@@ -161,11 +175,14 @@ jupyter notebook --no-browser --ip=0.0.0.0
 # http://localhost:8888/
 ```
 
-確認できたら Ctrl-C で止める
+確認できたら Ctrl-C で止める。
 
-----
 
-IRuby のインストール
+
+
+
+
+# IRuby のインストール
 
 ```sh
 # https://github.com/SciRuby/iruby
@@ -215,9 +232,9 @@ Traceback (most recent call last):
 ```
 
 これはおそらく rbenv + bundler のせいなので、
-iruby コマンドのラッパーを用意して対処してみる。
+iruby コマンドのラッパー `iruby.sh` を用意して対処してみる。
 
-他に良い方法があるかもしればいが、ここではひとまずこれで動いた。
+他に良い方法があるかもしればいが、ここではひとまずこれで動きました。
 
 ```sh
 cat <<'EOB' > iruby.sh
