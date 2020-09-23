@@ -39,7 +39,7 @@ obconf
 
 = 日本語入力
 
-^^^
+```
 --------------------------------
 ■ Fcitx に変更
 
@@ -53,10 +53,16 @@ https://gihyo.jp/admin/serial/01/ubuntu-recipe/0520?page=2
 im-config
 fcitx-auto-start
 
+スペルヒント（C-M-h）のキーバインド変更
+fcitx-config-gtk3
+「キーボード - 日本語」を選択して下部の歯車アイコン
+   「Keyboard Layout」 ダイアログが開く
+「サジェストの表示」を変更
+
 --------------------------------
 ■ Mozc
 
 /usr/lib/mozc/mozc_tool --mode=config_dialog
 
 一般＞スペースの入力
-^^^
+```
