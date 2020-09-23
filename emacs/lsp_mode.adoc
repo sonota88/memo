@@ -1,0 +1,24 @@
+emacs-lsp/lsp-mode: Emacs client/library for the Language Server Protocol +
+https://github.com/emacs-lsp/lsp-mode/
+
+= 基本
+
+- lsp-mode 単体ですべての機能を提供しているのではなく、
+  他のパッケージと協調して動く。
+  - flycheck / flymake
+  - コード補完: company-capf / completion-at-point
+    - company-lsp はもうサポートされていない
+  - ホバー: lsp-ui
+  - etc
+- language-server のインストール
+  - 自動のものとそうでないものがある？
+- language-server の起動
+  - TODO
+- language-server の再起動
+  - TODO
+
+= 基本的な使い方
+
+```
+M-x lsp
+```
