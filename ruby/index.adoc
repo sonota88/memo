@@ -1,0 +1,20 @@
+= Ruby
+:toc:
+
+== coding マジックコメント
+
+2.0.0 以降ではデフォルトが UTF-8 になったため、
+UTF-8 の場合はマジックコメント不要。
+
+https://www.ruby-lang.org/ja/news/2013/02/24/ruby-2-0-0-p0-is-released/
+
+衝撃の事実!? "# -*- encoding: utf-8 -*-"じゃなくてもいいんです！ - Qiita +
+https://qiita.com/jnchito/items/8f44a3c52d4669fefa93
+
+Emacs の ruby-mode でマジックコメントを自動挿入しない設定 - Qiita +
+https://qiita.com/tetsuo_jp/items/c05095931ae080f89d21
+
+[source,lisp]
+--------------------------------
+(setq ruby-insert-encoding-magic-comment nil)
+--------------------------------
