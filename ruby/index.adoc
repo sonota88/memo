@@ -18,3 +18,12 @@ https://qiita.com/tetsuo_jp/items/c05095931ae080f89d21
 --------------------------------
 (setq ruby-insert-encoding-magic-comment nil)
 --------------------------------
+
+== 標準ライブラリ
+
+=== REXML
+
+3.0 で default gem から bundled gemに変更
+
+週刊Railsウォッチ（20201005前編）Ruby 2.7.2がリリース、Shopifyのモジュラー化gem「packwerk」、stimulus_reflexほか｜TechRacho（テックラッチョ）〜エンジニアの「？」を「！」に〜｜BPS株式会社 +
+https://techracho.bpsinc.jp/hachi8833/2020_10_05/98286
