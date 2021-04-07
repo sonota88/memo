@@ -21,6 +21,15 @@ https://qiita.com/tetsuo_jp/items/c05095931ae080f89d21
 
 == 標準ライブラリ
 
+
+=== ERB
+
+result_with_hash: 2.5 以降
+
+サンプルコードでわかる！Ruby 2.5の主な新機能と変更点 Part 1 - Qiita +
+https://qiita.com/jnchito/items/f182b6f0093a6a3701a1
+
+
 === REXML
 
 3.0 で default gem から bundled gemに変更
