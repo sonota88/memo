@@ -19,6 +19,13 @@ https://qiita.com/tetsuo_jp/items/c05095931ae080f89d21
 (setq ruby-insert-encoding-magic-comment nil)
 --------------------------------
 
+
+== 各バージョンのメンテナンス状況 / EOL
+
+Ruby Maintenance Branches +
+https://www.ruby-lang.org/en/downloads/branches/
+
+
 == 標準ライブラリ
 
 
