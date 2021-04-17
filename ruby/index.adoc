@@ -20,6 +20,21 @@ https://qiita.com/tetsuo_jp/items/c05095931ae080f89d21
 --------------------------------
 
 
+== Bundler
+
+[source]
+--------------------------------
+bundle config set --local path 'vendor/bundle'
+--------------------------------
+
+---
+
+> The main change in bundler 2.1 is that 
+> deprecations for upcoming breaking changes in bundler 3 will be turned on by default.
+
+https://bundler.io/v2.1/whats_new.html
+
+
 == 各バージョンのメンテナンス状況 / EOL
 
 Ruby Maintenance Branches +
