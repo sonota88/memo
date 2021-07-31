@@ -35,6 +35,34 @@ bundle config set --local path 'vendor/bundle'
 https://bundler.io/v2.1/whats_new.html
 
 
+
+
+== Minitest
+
+[source,ruby]
+--------------------------------
+require "minitest/autorun"
+
+class TestFoo < Minitest::Test
+  def test_foo
+    assert_equals(3, 1 + 2, "...")
+  end
+end
+--------------------------------
+
+minitest/assertions.rb at v5.14.4 · seattlerb/minitest +
+https://github.com/seattlerb/minitest/blob/v5.14.4/lib/minitest/assertions.rb
+
+[source,ruby]
+--------------------------------
+assert_equal(exp, act, msg)
+flunk(msg = nil)
+pass()
+--------------------------------
+
+
+
+
 == 各バージョンのメンテナンス状況 / EOL
 
 Ruby Maintenance Branches +
