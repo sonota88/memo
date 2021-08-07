@@ -65,6 +65,22 @@ pass()
 
 
 
+== Standard
+
+Style :: RuboCop Docs +
+https://docs.rubocop.org/rubocop/cops_style.html
+
+[source]
+--------------------------------
+Style/HashSyntax
+  { :a => 1 } を禁止
+Style/MethodCallWithoutArgsParentheses
+  不要な括弧を禁止
+--------------------------------
+
+
+
+
 == 各バージョンのメンテナンス状況 / EOL
 
 Ruby Maintenance Branches +
