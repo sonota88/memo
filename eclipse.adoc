@@ -1,0 +1,36 @@
+= Eclipse
+:toc:
+
+== 設定ファイル
+
+ワークスペースディレクトリに設定ファイルがある。
+
+[source]
+--------------------------------
+フォント, キーバインド
+.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs
+
+エディタの注釈, スペースの表示
+.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs
+
+Java syntax coloring
+.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+
+Java formatter
+.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs
+
+--------------------------------
+
+
+
+
+== キーバインド
+
+[source]
+--------------------------------
+Command          Binding    When          Category
+File Search      (C-p C-p)  In Windows    Search
+Open Resource    S-C-R      In Windows    Navigate
+Rename           S-A-R      In Windows    Refactor - Java
+Word Completion  S-SPC      Editing Text  Edit
+--------------------------------
