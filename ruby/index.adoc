@@ -104,3 +104,13 @@ https://qiita.com/jnchito/items/f182b6f0093a6a3701a1
 
 週刊Railsウォッチ（20201005前編）Ruby 2.7.2がリリース、Shopifyのモジュラー化gem「packwerk」、stimulus_reflexほか｜TechRacho（テックラッチョ）〜エンジニアの「？」を「！」に〜｜BPS株式会社 +
 https://techracho.bpsinc.jp/hachi8833/2020_10_05/98286
+
+
+
+
+== その他
+
+=== require なしで pp が使える（2.5 以降）
+
+サンプルコードでわかる！Ruby 2.5の主な新機能と変更点 Part 2 - Qiita +
+https://qiita.com/jnchito/items/0d2d17a79a3e82fe3815
