@@ -34,6 +34,11 @@ bundle config set --local path 'vendor/bundle'
 
 https://bundler.io/v2.1/whats_new.html
 
+---
+
+gem install・bundle installなしでgemを使ったスクリプトを実行する方法 - Qiita +
+https://qiita.com/takahashim/items/c7b5d0e30b4aeb73d8f8
+
 
 
 
