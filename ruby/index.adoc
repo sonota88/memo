@@ -119,3 +119,12 @@ https://techracho.bpsinc.jp/hachi8833/2020_10_05/98286
 
 サンプルコードでわかる！Ruby 2.5の主な新機能と変更点 Part 2 - Qiita +
 https://qiita.com/jnchito/items/0d2d17a79a3e82fe3815
+
+
+=== 終端なし Range（2.6 以降）
+
+Ruby 2.6.0 Released +
+https://www.ruby-lang.org/ja/news/2018/12/25/ruby-2-6-0-released/
+
+NEWS for Ruby 2.6.0 (Ruby 3.2 リファレンスマニュアル) +
+https://docs.ruby-lang.org/ja/latest/doc/news=2f2_6_0.html
