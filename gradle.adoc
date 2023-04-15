@@ -1,0 +1,30 @@
+= Gradle
+:toc:
+
+== Java plugin の compile / implementation
+
+ドキュメントでは 4.7 で compile などが deprecated になっている。
+
+The Java Plugin - Gradle User Manual +
+https://docs.gradle.org/4.6/userguide/java_plugin.html#sec:java_plugin_and_dependency_management
+
+The Java Plugin - Gradle User Manual +
+https://docs.gradle.org/4.7/userguide/java_plugin.html#sec:java_plugin_and_dependency_management
+
+---
+
+7.0 で compile などがなくなっている。
+
+The Java Plugin +
+https://docs.gradle.org/7.0/userguide/java_plugin.html#sec:java_plugin_and_dependency_management
+
+Upgrading your build from Gradle 6.x to 7.0 +
+https://docs.gradle.org/current/userguide/upgrading_version_6.html#sec:configuration_removal
+
+> In Gradle 7, both the compile and runtime configurations are removed. Therefore, you have to migrate to the implementation and api configurations above.
+
+
+== リリース一覧
+
+Gradle | Releases +
+https://gradle.org/releases/
