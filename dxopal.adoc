@@ -1,0 +1,30 @@
+= DXOpal
+
+:toc:
+
+== 事前コンパイル
+
+Dockerを利用してDXOpalアプリケーションを手軽に事前コンパイルする +
+https://qiita.com/sonota88/items/536c76d7383356592b92
+
+
+== Ctrl-r, F12 などを有効にしたい
+
+[source,ruby]
+--------------------------------
+# input.rb
+
+DXOpal::Input::ON_KEYDOWN_ = %x{
+  function(ev){
+    if (ev.key === 'F12') {
+      return;
+    } else if (ev.ctrlKey && ev.key === 'r') {
+      return;
+    }
+
+    #{Input._pressing_keys}[ev.code] = #{@@tick};
+    ev.preventDefault();
+    ev.stopPropagation();
+  }
+}
+--------------------------------
