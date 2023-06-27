@@ -28,3 +28,23 @@ https://docs.gradle.org/current/userguide/upgrading_version_6.html#sec:configura
 
 Gradle | Releases +
 https://gradle.org/releases/
+
+
+
+
+== 雑多
+
+=== コマンド
+
+[source,sh]
+--------------------------------
+  # タスクのヘルプを表示
+gradle help --task {task name}
+
+  # 依存関係をツリー表示
+gradle dependency
+
+  # 依存関係をツリー表示: 対象を指定
+gradle dependency --dependency {target}
+gradle dependency --dependency {target} --singlepath
+--------------------------------
