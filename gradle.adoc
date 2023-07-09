@@ -34,6 +34,17 @@ https://gradle.org/releases/
 
 == 雑多
 
+Gradle でユニットテストの結果をコンソールに詳しく表示する - まくまくGradleノート +
+https://maku77.github.io/gradle/test-detail-log.html
+
+---
+
+java - How to run Gradle test when all tests are UP-TO-DATE? - Stack Overflow +
+https://stackoverflow.com/questions/29427020/how-to-run-gradle-test-when-all-tests-are-up-to-date
+
+> As of Gradle 7.6, it is possible to use gradle test --rerun.
+
+
 === コマンド
 
 [source,sh]
