@@ -34,7 +34,9 @@ link:https://ja.wikisource.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9
 
 === テストダブル
 
-link:https://gihyo.jp/dev/serial/01/savanna-letter/0006[第6回　自動テストのサイズダウン戦略 ～テストダブルを作る前に考えるべきこと～ | gihyo.jp]
+* link:https://gihyo.jp/dev/serial/01/savanna-letter/0006[第6回　自動テストのサイズダウン戦略 ～テストダブルを作る前に考えるべきこと～ | gihyo.jp]
+* link:https://ajito.fm/6/[ajitofm 6: Worse is Better] +
+** 19:30〜
 
 
 === テストサイズ
