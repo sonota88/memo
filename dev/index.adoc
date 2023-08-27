@@ -90,6 +90,20 @@ link:https://zenn.dev/ys/articles/391bde4fbd03d5[Clean Agile読書感想文]
 
 
 
+=== 早期リターンの乱用を避ける
+
+早期リターンとApple SLLバグ | Ninton +
+https://www.ninton.co.jp/archives/7903
+
+ケントベック「Smalltalkベストプラクティスパターン」のガード節とアーリーリターン | Ninton +
+https://www.ninton.co.jp/archives/8271
+
+リーダブルコードをさらに改良する（アンチ・アーリーリターン） | Ninton +
+https://www.ninton.co.jp/archives/8065
+
+
+
+
 === 大数の法則
 
 Robert C. Martin 『Clean Agile 基本に立ち戻れ』 p78
