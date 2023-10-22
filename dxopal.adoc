@@ -12,6 +12,28 @@ https://qiita.com/sonota88/items/536c76d7383356592b92
 
 [source,ruby]
 --------------------------------
+# main.rb
+
+Window.load_resources do
+  Window.loop do
+    if (
+      (Input.key_down?(K_LCONTROL) && Input.key_push?(K_R)) ||
+      (Input.key_down?(K_RCONTROL) && Input.key_push?(K_R)) ||
+      Input.key_push?(K_F5)
+    )
+      `location.reload()`
+    end
+
+    # ...
+  end
+end
+
+--------------------------------
+
+DXOpal::Input を修正する場合
+
+[source,ruby]
+--------------------------------
 # input.rb
 
 DXOpal::Input::ON_KEYDOWN_ = %x{
