@@ -86,6 +86,35 @@ link:https://zenn.dev/ys/articles/391bde4fbd03d5[Clean Agile読書感想文]
 * 説明が少ない方が良い
 * 不可逆な変更は先延ばしする
 ** 『クリーンアーキテクチャ』
+* よく言われること
+** コードは書く時間よりも読む時間の方が長い
+
+
+
+
+=== スコープ
+
+第3回　スコープを意識したプログラミング―その2　変数のスコープ | gihyo.jp +
+https://gihyo.jp/dev/serial/01/code/000302
+
+
+
+
+=== コードの短さと可読性
+
+コードの短さよりも可読性を重視する - Neo's World +
+https://neos21.net/tech/programming/rather-readability-than-short-coding.html
+
+命名の機会が少なくなる / デバッグが難しくなる
+
++++
+<hr />
++++
+
+Only My Rails Way +
+https://zenn.dev/yukito0616/articles/d3b7032e9f1e90#%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89
+
+> 「一見ダサいコード」は以外と読みやすい。
 
 
 
