@@ -53,9 +53,15 @@ https://stackoverflow.com/questions/29427020/how-to-run-gradle-test-when-all-tes
 gradle help --task {task name}
 
   # 依存関係をツリー表示
-gradle dependency
+gradle dependencies
 
   # 依存関係をツリー表示: 対象を指定
 gradle dependency --dependency {target}
 gradle dependency --dependency {target} --singlepath
 --------------------------------
+
+
+=== タスク間の依存関係を図示する
+
+Gradle: タスク間の依存関係を図示する（Graphviz 使用） +
+https://memo88.hatenablog.com/entry/gradle-task-graph-dependency-graphviz
