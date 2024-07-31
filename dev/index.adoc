@@ -111,6 +111,7 @@ link:https://zenn.dev/ys/articles/391bde4fbd03d5[Clean Agile読書感想文]
 
 * 直交性
 ** 達人プログラマー（ピアソン版） p33
+** link:https://qiita.com/hirokidaichi/items/61ad129eae43771d0fc3[スケールする要求を支える仕様の「意図」と「直交性」 #DDD - Qiita]
 * 餅より米
 ** link:https://note.com/hal_sk/n/n916a422caafd[行政文書はMarkdownで管理できるか｜Hal Seki｜note]
 *** 「餅から米を作る」
