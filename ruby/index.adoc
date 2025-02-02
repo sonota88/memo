@@ -126,6 +126,12 @@ https://github.com/ruby/ruby/blob/master/doc/standard_library.rdoc
 
 == その他
 
+=== <<~（squiggly heredoc）（2.3 以降）
+
+サンプルコードでわかる！Ruby 2.3の主な新機能 #Ruby - Qiita +
+https://qiita.com/jnchito/items/0faac073cb77417d61c7
+
+
 === require なしで pp が使える（2.5 以降）
 
 サンプルコードでわかる！Ruby 2.5の主な新機能と変更点 Part 2 - Qiita +
