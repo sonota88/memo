@@ -121,7 +121,8 @@ https://gihyo.jp/article/2024/01/ruby3.3-bundled-gems
 ruby/doc/standard_library.rdoc at master · ruby/ruby +
 https://github.com/ruby/ruby/blob/master/doc/standard_library.rdoc
 
-
+Standard Gems +
+https://stdgems.org/
 
 
 == その他
