@@ -118,8 +118,8 @@ https://techracho.bpsinc.jp/hachi8833/2020_10_05/98286
 (2024-01-29) 徹底解説！ default gemsとbundled gemsのすべて | gihyo.jp +
 https://gihyo.jp/article/2024/01/ruby3.3-bundled-gems
 
-ruby/doc/standard_library.rdoc at master · ruby/ruby +
-https://github.com/ruby/ruby/blob/master/doc/standard_library.rdoc
+ruby/doc/standard_library.md at master · ruby/ruby +
+https://github.com/ruby/ruby/blob/master/doc/standard_library.md
 
 Standard Gems +
 https://stdgems.org/
