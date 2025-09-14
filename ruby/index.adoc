@@ -20,6 +20,12 @@ https://qiita.com/tetsuo_jp/items/c05095931ae080f89d21
 --------------------------------
 
 
+== Gem
+
+gem exec がもっと広まってほしい - HsbtDiary(2025-08-01) +
+https://www.hsbt.org/diary/20250801.html#p03
+
+
 == Bundler
 
 [source]
